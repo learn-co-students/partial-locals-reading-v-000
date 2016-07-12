@@ -37,6 +37,7 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'annotate'
   gem 'faker'
+    gem 'tzinfo-data', platform: [:mingw, :mswin, :x64_mingw]
 end
 
 group :development do
