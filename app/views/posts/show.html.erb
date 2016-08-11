@@ -1,7 +1,7 @@
 Information About the Post
-<ul>
-  <li> <%= author.name %></li>
-  <li> <%= author.hometown %></li>
-</ul>
+<%= render partial: "authors/author", locals: {post_author: @post.author} %>
+
+<!-- we are not being explicit about the data required. this is dependent on @author
+this causes problems if @author does not exist -->
 <%= @post.title %>
 <%= @post.content %>
