@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
-    @author = @post.author
+    @author = @post.author #not needed anymore w locals
   end
 
   def index
