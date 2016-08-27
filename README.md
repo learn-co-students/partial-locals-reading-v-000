@@ -1,4 +1,4 @@
-# Partials with Locals 
+# Partials with Locals
 
 ## Objectives
 1. Use the locals keyword
@@ -144,3 +144,5 @@ Don't worry if you find the syntax for rendering a partial hard to remember - it
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/partial-locals-reading'>Partial with Locals </a> on Learn.co and start learning to code for free.</p>
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/partial-locals-reading'>Partial with Locals </a> on Learn.co and start learning to code for free.</p>
+
+###
