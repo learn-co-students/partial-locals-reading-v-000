@@ -1,7 +1,5 @@
 Information About the Post
-<ul>
-  <li> <%= author.name %></li>
-  <li> <%= author.hometown %></li>
-</ul>
+<%= render partial: "authors/author", locals: {post_author: @author} %>
+<!-- No longer passomg the render method a string, we're passing a hash with two key value pairs -->
 <%= @post.title %>
 <%= @post.content %>
