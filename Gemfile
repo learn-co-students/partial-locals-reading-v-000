@@ -37,6 +37,7 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'annotate'
   gem 'faker'
+  gem 'learn-co'
 end
 
 group :development do
