@@ -39,7 +39,8 @@ Rails.application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-
+resources :posts
+resources :authors
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
