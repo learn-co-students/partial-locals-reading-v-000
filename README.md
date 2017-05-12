@@ -1,4 +1,5 @@
 # Partials with Locals 
+Test
 
 ## Objectives
 1. Use the locals keyword
