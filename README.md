@@ -1,4 +1,4 @@
-# Partials with Locals 
+# Partials with Locals
 
 ## Objectives
 1. Use the locals keyword
@@ -8,7 +8,7 @@
 
 ## Introduction
 
-Partials help us break our code up into reusable chunks.  They also often have implicit dependencies that can lead to bugs.  To make the implicit explicit, use locals whenever your partials depend on data to work.
+Partials help us break our code up into reusable chunks.  They also often have implicit dependencies that can lead to bugs.  To make the impslicit explicit, use locals whenever your partials depend on data to work.
 In the following example, we'll unpack exactly what locals are and how they're used.
 
 ## Lesson
