@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
-    @author = @post.author
+    # uneeded because handled by passing local variables into partial
   end
 
   def index
