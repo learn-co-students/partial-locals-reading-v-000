@@ -1,7 +1,5 @@
 Information About the Post
-<ul>
-  <li> <%= author.name %></li>
-  <li> <%= author.hometown %></li>
-</ul>
+<%= render partial: 'authors/author', locals: {post_author: @post.author}%>
+<!-- POST_AUTHOR MUST BE REFERENCED IN _author!!! renders local variables - dependency is now explicit. this is a hash now, first key tells name of partial, and the other is a hash of local variables to pass in partial. key is name of variable , value is value you want in the variable-->
 <%= @post.title %>
 <%= @post.content %>
