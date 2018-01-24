@@ -7,7 +7,7 @@
 #  hometown   :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-#
+# yay!#
 
 class Author < ActiveRecord::Base
   has_many :posts
