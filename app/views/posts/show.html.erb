@@ -1,7 +1,8 @@
 Information About the Post
-<ul>
-  <li> <%= author.name %></li>
-  <li> <%= author.hometown %></li>
-</ul>
+<%= render partial 'authors/author', locals: {post_author: @author} %>
 <%= @post.title %>
 <%= @post.content %>
+
+<!-- The first key-value pair tells Rails the name of the partial to render.
+The second key-value pair contains a key of locals pointing to a hash of variables to pass into the partial.
+BE MORE EXPLICIT-->
