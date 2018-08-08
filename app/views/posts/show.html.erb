@@ -1,7 +1,6 @@
 Information About the Post
-<ul>
-  <li> <%= author.name %></li>
-  <li> <%= author.hometown %></li>
-</ul>
+<!-- because of the line below, we can delete @author = @post.author in posts_controller and just put @post.author director here. -->
+<%= render partial: "authors/author", locals: {post_author: @post.author} %>
+
 <%= @post.title %>
 <%= @post.content %>
