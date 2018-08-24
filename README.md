@@ -1,4 +1,4 @@
-# Partials with Locals 
+# Partials with Locals
 
 ## Objectives
 1. Use the locals keyword
@@ -12,7 +12,7 @@ Partials help us break our code up into reusable chunks.  They also often have i
 In the following example, we'll unpack exactly what locals are and how they're used.
 
 ## Lesson
-
+.
 Take a look at the included repo.  You should notice the same piece of view code in a few places.
 
 ```erb
