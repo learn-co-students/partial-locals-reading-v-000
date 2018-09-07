@@ -1,7 +1,15 @@
 Information About the Post
-<ul>
-  <li> <%= author.name %></li>
-  <li> <%= author.hometown %></li>
-</ul>
+
+<%= render partial: "authors/author", locals: {post_author: @post.author} %>
+<!-- 		   key: "value"         , key:     {value}              -->
+
+<!-- The first key-value pair tells Rails the name of the partial to render. 
+
+The second key-value pair contains a key of locals pointing to a hash of variables to pass into the partial. Within that nested hash, the key is the name of the variable and its value is the value you'd like it to have in the partial. 
+
+For the values of your locals, you can use instance variables set in the controller.
+
+When we use locals, we need to make sure that the variables we refer to in our partial have the same names as the keys in our locals hash. -->
+
 <%= @post.title %>
 <%= @post.content %>

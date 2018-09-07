@@ -1,0 +1,14 @@
+<ul>
+  <li> <%= post_author.name %></li>
+  <li> <%= post_author.hometown %></li>
+</ul>
+
+<!-- The post_author: key is the argument name, and the value of that argument, @author, is the corresponding value stored as post_author and passed into the method. We can name the keys whatever we want. -->
+
+<!-- In fact, with locals, we can completely eliminate the @author = @post.author line in the 
+posts#show controller action, instead only accessing that data where we need it, in the partial. -->
+
+<!-- <ul>
+  <li> <%= @author.name %></li>
+  <li> <%= @author.hometown %></li>
+</ul> -->
