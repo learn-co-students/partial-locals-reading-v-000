@@ -1,4 +1,4 @@
-# Partials with Locals 
+# Partials with Locals
 
 ## Objectives
 1. Use the locals keyword
@@ -21,7 +21,7 @@ Take a look at the included repo.  You should notice the same piece of view code
   <li> <%= @author.hometown %></li>
 </ul>
 ```
-You'll find that code (or very similar code) in the following pages: `app/views/authors/show.html.erb`, `app/views/authors/index.html.erb`, `app/views/posts/show.html.erb`.
+You'll find that code (or very similar code) in the following pages: `app/views/authors/show.html.erb`, `app/views/authors/index.html.erb`, `app/views/posts/show.html.erb`.!
 
 Looks like we've got some work to do.  Let's start with the author show page.  
 Let's remove the code from our `app/views/authors/show.html.erb` page.  Now our file should be empty:
