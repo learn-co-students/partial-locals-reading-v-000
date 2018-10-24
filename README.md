@@ -1,4 +1,4 @@
-# Partials with Locals 
+# Partials with Locals
 
 ## Objectives
 1. Use the locals keyword
@@ -27,7 +27,7 @@ Looks like we've got some work to do.  Let's start with the author show page.
 Let's remove the code from our `app/views/authors/show.html.erb` page.  Now our file should be empty:
 `app/views/authors/show.html.erb`
 ```
-
+               
 ```
 We can move the removed code into a partial, `app/views/authors/_author.html.erb`, that now has the following code.
 `app/views/authors/_author.html.erb`
