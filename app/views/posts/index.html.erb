@@ -1,5 +1,5 @@
-<%= @posts.each do |post| %>
-<%= render partial: "authors/author" locals: {author: @post.author}
+<% @posts.each do |post| %>
+<%= render partial: "authors/author", locals: {author: @post.author}
   <%= post.title %>
   <%= post.content %>
 <% end %>
