@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+
+  get '/admin/authors/new', to: 'authors#new'
+  get '/admin/authors/delete', to: 'authors#delete'
+  get '/admin/authors/create', to: 'authors#create'
+  get '/admin/comments/moderate', to: 'comments#moderate'
+  namespace :admin do
+    resources :stats, only: [:index]
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
