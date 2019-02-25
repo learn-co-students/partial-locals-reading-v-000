@@ -1,7 +1,4 @@
 Information About the Post
-<ul>
-  <li> <%= author.name %></li>
-  <li> <%= author.hometown %></li>
-</ul>
+<%= render 'authors/author' %> #calls the partial from the 'authors' folder
 <%= @post.title %>
 <%= @post.content %>
