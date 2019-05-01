@@ -1,6 +1,6 @@
 <% @authors.each do |author| %>
   <ul>
-    <li> <%= author.name %></li>
+    <li> <%= link_to author.name, author %></li>
     <li> <%= author.hometown %></li>
   </ul>
 <% end %>
