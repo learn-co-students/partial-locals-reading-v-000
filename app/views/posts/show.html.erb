@@ -1,7 +1,5 @@
-Information About the Post
-<ul>
-  <li> <%= author.name %></li>
-  <li> <%= author.hometown %></li>
-</ul>
-<%= @post.title %>
-<%= @post.content %>
+<p>Information About the Post</p>
+<%= render partial: "authors/author", locals: {author: @post.author} %>
+
+<p>Title: <%= @post.title %></p>
+<p>Content: <%= @post.content %></p>
