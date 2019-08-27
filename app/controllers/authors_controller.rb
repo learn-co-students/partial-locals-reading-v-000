@@ -7,3 +7,10 @@ class AuthorsController < ApplicationController
     @authors = Author.all
   end
 end
+=begin
+  
+<%= render 'author' %> 
+
+
+  
+=end
