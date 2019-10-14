@@ -1,0 +1,17 @@
+<!-- https://learn.co/tracks/full-stack-web-development-v8/module-13-rails/section-8-layouts-and-partials/partial-with-locals -->
+
+<!--
+When we use locals, we need to make sure that the variables we refer to in our
+partial have the same names as the keys in our locals hash.
+In our example partial, app/views/author/_author.html.erb,
+we need to change our code from:
+<ul>
+  <li> <%#= author.name %></li>
+  <li> <%#= author.hometown %></li>
+</ul>
+to this:
+-->
+<ul>
+  <li> <%= post_author.name %></li>     <!-- because of this variable "post_author"-->
+  <li> <%= post_author.hometown %></li> <!-- located in: <%#= render partial: "authors/author", locals: {post_author: @author} %> -->
+</ul>                                   <!-- which is in "app/views/posts/show.html.erb"-->
