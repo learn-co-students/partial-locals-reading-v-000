@@ -1,7 +1,27 @@
+<!-- https://learn.co/tracks/full-stack-web-development-v8/module-13-rails/section-8-layouts-and-partials/partial-with-locals -->
+
 Information About the Post
-<ul>
-  <li> <%= author.name %></li>
-  <li> <%= author.hometown %></li>
-</ul>
+<!--
+Let's remove the repetition in our codebase by using that partial instead.
+By using the partial, our code will look like the following:
+
+<%#= render 'authors/author' %>
+
+This code may look OK at first, but it poses some problems...
+...Let's see how local variables make our code more explicit.
+This is what the entire show view looks like:
+<%= render partial: "authors/author", locals: {post_author: @author} %>
+Notice a few things. First, we are no longer passing the render method a string;
+we're passing a hash with two key-value pairs.
+-->
+
+<!--
+
+<ul>                                    <=# repititious code we are removing
+  <li> <%#= author.name %></li>         <=# repititious code we are removing
+  <li> <%#= author.hometown %></li>     <=# repititious code we are removing
+</ul>                                   <=# repititious code we are removing
+-->
+
 <%= @post.title %>
 <%= @post.content %>

@@ -2,9 +2,15 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.2'
+gem 'rails'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
+# NOTE: I was getting an error when I went to run my migrations that said:
+# $ rake aborted! Gem::LoadError: Specified 'sqlite3' ...
+# even though the gem was in fact specified.  I found a discussion here:
+# https://stackoverflow.com/questions/24336809/gemloaderror-specified-sqlite3-for-database-adapter-but-the-gem-is-not-loa
+# and used the solution which was to specifu the sqlite3 version to 1.3.13
+gem 'sqlite3', '~> 1.3.13'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
