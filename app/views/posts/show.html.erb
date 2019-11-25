@@ -1,7 +1,14 @@
 Information About the Post
-<ul>
-  <li> <%= @author.name %></li>
-  <li> <%= @author.hometown %></li>
-</ul>
+<!--
+Because we are calling a partial from outside the current app/views/posts folder,
+we must specify the folder that our author partial is coming from by calling render 'authors/author'
+<%= render 'authors/author' %>
+-->
+<!--
+We are no longer passing the render method a String; we're passing a Hash with two key-value pairs
+The first key-value pair tells Rails the name of the partial to render
+The second key-value pair points itself to another Hash. That Hash contains a key of locals pointing to values that will be assigned to them as local variables within the partial.
+-->
+<%= render partial: "authors/author", locals: {post_author: @author} %>
 <%= @post.title %>
 <%= @post.content %>
