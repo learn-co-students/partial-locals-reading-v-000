@@ -110,10 +110,10 @@ Information About the Post
 
 ## The Problem
 
-In `app/views/authors/show.html.erb` our source of information about  `.name`
-and `.hometown` is `@author`; in `app/views/posts/show.html.erb` the source of
-information about `.name` and `.hometown` is `@post.author`. If we could tell
-the partial "use as your source" `@author` or `@post.author`, we could share the
+In `app/views/posts/show.html.erb` our source of information about  `.name`
+and `.hometown` is `@author`; in `app/views/posts/index.html.erb` the source of
+information about `.name` and `.hometown` is `post.author`. If we could tell
+the partial "use as your source" `@author` or `post.author`, we could share the
 partial across these two different views.
 
 The `locals` parameter to `render` provides this flexibility.
